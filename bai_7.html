@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(a,b) {
+        let arr = [];
+        arr.push(a,b);
+        let temp = arr[0];
+        arr[0]= arr[arr.length-1];
+        arr[arr.length-1]=temp;
+        document.write(arr);
+    }
+    let num1 = parseInt(prompt("nhập số đầu: "));
+    let num2 = parseInt(prompt("nhập số t2: "));
+    check(num1,num2);
+</script>
+</body>
+</html>
